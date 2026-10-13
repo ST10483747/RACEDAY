@@ -101,9 +101,8 @@ The test suite should be expanded to cover important API functionality, validati
 
 GitHub Actions is configured to restore dependencies, build the API and run unit tests when changes are pushed or pull requests are opened for the configured branches.
 
-The workflow must complete successfully before a successful CI/CD run can be reported.
+The workflow is unsuccessful and unable to fix, tried various times
 
-**CI/CD screenshot:** Add a screenshot of a successful workflow run after the workflow passes.
 
 ## 9. Video Demonstration
 
