@@ -1,6 +1,7 @@
 name: RaceDay API CI
-
 on:
+  workflow_dispatch:
+  
   push:
     branches: [ "main", "part-2" ]
   pull_request:
