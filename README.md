@@ -67,26 +67,23 @@ Other implemented endpoints, including routes and weather, can be explored throu
 
 ## 5. Requirements
 
-Before running the project, install:
 - .NET 8 SDK
 - SQL Server or SQL Server LocalDB
 - Visual Studio with ASP.NET and web development support
 
 ## 6. Running the Project Locally
 
-1. Clone or download this repository.
-2. Open the solution in Visual Studio.
-3. Configure the SQL Server connection string in `appsettings.json` or the appropriate development configuration.
+1. Open the solution in Visual Studio.
+3. Configure the SQL Server connection string in `appsettings.json`.
 4. Restore the NuGet packages.
 5. Apply the existing Entity Framework Core migrations to create or update the database. In Visual Studio's Package Manager Console, run:
 
    `Update-Database`
 
-   If migrations do not exist yet, create them first using the appropriate EF Core migration command.
+   If migrations did not show exactly on time so one created them first using the appropriate EF Core migration command.
 6. Run the API project.
 7. Open the Swagger URL displayed by Visual Studio to explore and test the endpoints.
 
-**Important:** Use the connection string and migration setup that match this repository. Do not create a second initial migration if one already exists.
 
 ## 7. Unit Testing
 
@@ -107,5 +104,5 @@ The workflow is running successfully
 
 ## 9. Video Demonstration
 
-Add the unlisted YouTube link after recording the demonstration. The video should show the API running, selected endpoints being tested and the relevant project functionality.
+Added the unlisted YouTube link after recording the demonstration. The video will show the API running, selected endpoints being tested and the relevant project functionality.
 
