@@ -1,11 +1,11 @@
 name: RaceDay API CI
+
 on:
   workflow_dispatch:
-  
   push:
-    branches: [ "main", "part-2" ]
+    branches: [ "master", "main", "part-2" ]
   pull_request:
-    branches: [ "main", "part-2" ]
+    branches: [ "master", "main", "part-2" ]
 
 jobs:
   build:
@@ -21,13 +21,13 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore API dependencies
-        run: dotnet restore RaceDay.Api/RaceDay.Api.csproj
+        run: dotnet restore RaceDay.Api.csproj
 
       - name: Build API
-        run: dotnet build RaceDay.Api/RaceDay.Api.csproj --no-restore
+        run: dotnet build RaceDay.Api.csproj --no-restore
 
       - name: Restore test dependencies
-        run: dotnet restore RaceDayAPI.Tests/RaceDayAPI.Tests.csproj
+        run: dotnet restore RaceDay.Api.Tests/RaceDay.Api.Tests.csproj
 
       - name: Run unit tests
-        run: dotnet test RaceDayAPI.Tests/RaceDayAPI.Tests.csproj --no-restore
+        run: dotnet test RaceDay.Api.Tests/RaceDay.Api.Tests.csproj --no-restore
