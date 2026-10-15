@@ -6,6 +6,8 @@ RaceDay is a RESTful API developed to support South African running, walking and
 
 The system is developed using ASP.NET Core Web API and Entity Framework Core with a SQL Server database.
 
+linked Visual studio code to MYSQL 
+
 ## 2. User Roles
 
 ### Organiser
