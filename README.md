@@ -101,7 +101,7 @@ The test suite should be expanded to cover important API functionality, validati
 
 GitHub Actions is configured to restore dependencies, build the API and run unit tests when changes are pushed or pull requests are opened for the configured branches.
 
-The workflow is unsuccessful and unable to fix, tried various times
+The workflow is running successfully
 
 
 ## 9. Video Demonstration
